@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Optima LT';
+    src: url('OptimaLT-Bold.eot');
+    src: url('OptimaLT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('OptimaLT-Bold.woff') format('woff'),
+        url('OptimaLT-Bold.svg#OptimaLT-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

@@ -1,0 +1,641 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-aizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+/*------------------*/
+@font-face {
+  font-family: 'Helvetica LT STD';
+  src: url("../Fonts/HelveticaLT STD/HelveticaLTStd-Roman.eot");
+  src: url("../Fonts/HelveticaLT STD/HelveticaLTStd-Roman.eot?#iefix") format("embedded-opentype"), url("../Fonts/HelveticaLT STD/HelveticaLTStd-Roman.woff") format("woff"), url("../Fonts/HelveticaLT STD/HelveticaLTStd-Roman.ttf") format("truetype"), url("../Fonts/HelveticaLT STD/HelveticaLTStd-Roman.svg#HelveticaLTStd-Roman") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Segoe WP';
+  src: url("../Fonts/Segoe WP/SegoeWP-Light.eot");
+  src: url("../Fonts/Segoe WP/SegoeWP-Light.eot?#iefix") format("embedded-opentype"), url("../Fonts/Segoe WP/SegoeWP-Light.woff") format("woff"), url("../Fonts/Segoe WP/SegoeWP-Light.ttf") format("truetype"), url("../Fonts/Segoe WP/SegoeWP-Light.svg#SegoeWP-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Segoe UI Symbol';
+  src: url("../Fonts/SegoeUISymbol/SegoeUISymbol.eot");
+  src: url("../Fonts/SegoeUISymbol/SegoeUISymbol.eot?#iefix") format("embedded-opentype"), url("../Fonts/SegoeUISymbol/SegoeUISymbol.woff") format("woff"), url("../Fonts/SegoeUISymbol/SegoeUISymbol.ttf") format("truetype"), url("../Fonts/SegoeUISymbol/SegoeUISymbol.svg#SegoeUISymbol") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Segoe WPN - Semibold';
+  src: url("../Fonts/Segoe WPN - Semibold/SegoeWP-Semibold.eot");
+  src: url("../Fonts/Segoe WPN - Semibold/SegoeWP-Semibold.eot?#iefix") format("embedded-opentype"), url("../Fonts/Segoe WPN - Semibold/SegoeWP-Semibold.woff") format("woff"), url("../Fonts/Segoe WPN - Semibold/SegoeWP-Semibold.ttf") format("truetype"), url("../Fonts/Segoe WPN - Semibold/SegoeWP-Semibold.svg#SegoeWP-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Segoe WPN - Semi Light';
+  src: url("../Fonts/Segoe WPN - Semi Light/SegoeWP-SemiLight.eot");
+  src: url("../Fonts/Segoe WPN - Semi Light/SegoeWP-SemiLight.eot?#iefix") format("embedded-opentype"), url("../Fonts/Segoe WPN - Semi Light/SegoeWP-SemiLight.woff") format("woff"), url("../Fonts/Segoe WPN - Semi Light/SegoeWP-SemiLight.ttf") format("truetype"), url("../Fonts/Segoe WPN - Semi Light/SegoeWP-SemiLight.svg#SegoeWP-SemiLight") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+.wrapper {
+  max-width: 1280px;
+  height: 30px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2; }
+  .wrapper .line {
+    width: 1280px;
+    height: 28px;
+    background-color: #424242; }
+  .wrapper .container {
+    max-width: 995px;
+    margin: 0 auto;
+    position: relative; }
+    .wrapper .container .ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      top: -27px;
+      right: 0;
+      float: right; }
+      .wrapper .container .ul .li {
+        margin-left: 30px; }
+        .wrapper .container .ul .li .a {
+          text-decoration: none;
+          color: #fff;
+          font-family: "Segoe WP";
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 26px;
+          float: right;
+          -webkit-transition-duration: 1s;
+          -o-transition-duration: 1s;
+          transition-duration: 1s; }
+          .wrapper .container .ul .li .a:hover {
+            color: black;
+            padding: 7px 7px -1px 7px;
+            background: orange; }
+
+.c {
+  position: absolute;
+  margin-left: 158px; }
+
+.d {
+  position: absolute;
+  margin-left: 316px; }
+
+.e {
+  position: absolute;
+  margin-left: 474px; }
+
+.f {
+  position: absolute;
+  margin-left: 632px; }
+
+.ac {
+  position: absolute;
+  margin-top: 260px; }
+
+.ad {
+  position: absolute;
+  margin-top: 510px; }
+
+.ae {
+  position: absolute;
+  margin-top: 760px; }
+
+.wrapper-second {
+  max-width: 1280px;
+  height: 112px;
+  position: relative;
+  margin: 0 auto; }
+  .wrapper-second .bg1 {
+    background: #f5f5f5;
+    height: 112px; }
+    .wrapper-second .bg1 .input {
+      width: 428px;
+      height: 40px;
+      background-color: #79b260;
+      margin-top: -60px;
+      margin-left: 320px; }
+    .wrapper-second .bg1 .books {
+      margin-top: 21px;
+      margin-left: 140px; }
+    .wrapper-second .bg1 .first__input {
+      position: absolute;
+      top: 38px;
+      left: 322px;
+      width: 328px;
+      height: 33px;
+      border: 4px solid #79b260; }
+    .wrapper-second .bg1 button {
+      position: absolute;
+      top: 43px;
+      left: 650px;
+      background: none; }
+      .wrapper-second .bg1 button span {
+        color: #ffffff;
+        font-family: "Segoe WPN";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px; }
+    .wrapper-second .bg1 .block {
+      display: block; }
+      .wrapper-second .bg1 .block .magazine {
+        width: 27px;
+        height: 29px;
+        position: absolute;
+        top: 25px;
+        left: 829px; }
+      .wrapper-second .bg1 .block .my__cart {
+        width: 197px;
+        height: 20px;
+        color: #6d6d6d;
+        font-family: "Segoe WP";
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 26px;
+        position: absolute;
+        top: 30px;
+        left: 865px; }
+        .wrapper-second .bg1 .block .my__cart span {
+          font-size: 13px; }
+      .wrapper-second .bg1 .block .cost {
+        color: #6d6d6d;
+        font-family: "Segoe WP";
+        font-size: 27px;
+        font-weight: 700;
+        line-height: 26px;
+        position: absolute;
+        top: 63px;
+        left: 832px; }
+      .wrapper-second .bg1 .block .checkout {
+        color: #ffffff;
+        font-family: "Segoe WP";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        padding: 2px 11px 2px 11px;
+        background: #3d3d3d;
+        position: absolute;
+        top: 62px;
+        left: 920px; }
+      .wrapper-second .bg1 .block .star {
+        position: absolute;
+        top: 35px;
+        left: 1066px; }
+      .wrapper-second .bg1 .block .twenty {
+        color: #ffffff;
+        font-family: "Segoe WP";
+        font-size: 13px;
+        font-weight: 400;
+        padding: 3px 7px 2px 7px;
+        background: #a8cd98;
+        border-radius: 15px;
+        position: absolute;
+        top: 56px;
+        left: 1109px; }
+      .wrapper-second .bg1 .block .list {
+        width: 177px;
+        height: 17px;
+        color: #6d6d6d;
+        font-family: "Segoe WP";
+        font-size: 21px;
+        font-weight: 800;
+        position: absolute;
+        top: 68px;
+        right: 71px; }
+
+.wrapper3 {
+  max-width: 800px;
+  height: 1120px;
+  border: 1px solid #d8dce0;
+  margin-left: 200px;
+  margin-top: -865px;
+  position: relative; }
+  .wrapper3 main p {
+    width: 147px;
+    height: 19px;
+    color: #464646;
+    font-family: "Segoe WP";
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    position: absolute;
+    top: 18px;
+    left: 26px; }
+  .wrapper3 main .book {
+    position: absolute;
+    top: 69px;
+    left: 29px; }
+  .wrapper3 main .b {
+    margin-left: 157px; }
+  .wrapper3 main .span {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #f05356;
+    position: absolute;
+    top: 59px;
+    left: 100px; }
+    .wrapper3 main .span .span1 {
+      width: 37px;
+      height: 15px;
+      color: #ffffff;
+      font-family: "Segoe WP";
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 26px;
+      margin-left: 10px;
+      margin-top: 5px;
+      position: absolute; }
+    .wrapper3 main .span .span2 {
+      width: 19px;
+      height: 11px;
+      color: #ffffff;
+      font-family: "Segoe WP";
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 26px;
+      margin-left: 15px;
+      margin-top: 5px;
+      position: absolute; }
+  .wrapper3 main .block span {
+    width: 93px;
+    height: 32px;
+    color: #595959;
+    font-family: "Segoe WPN - Semi Light";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    position: absolute;
+    text-align: center;
+    top: 235px;
+    left: 39px; }
+  .wrapper3 main .block .costs {
+    width: 36px;
+    height: 21px;
+    color: #f05356;
+    font-family: "Helvetica LT Std";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 20px;
+    position: absolute;
+    top: 274px;
+    left: 63px; }
+  .wrapper3 .spanion {
+    position: absolute;
+    bottom: 8px;
+    right: 29px; }
+    .wrapper3 .spanion .number {
+      width: 138px;
+      height: 11px;
+      color: #646464;
+      font-family: "Helvetica LT Std";
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 30px; }
+      .wrapper3 .spanion .number:hover {
+        border-bottom: 2px solid #dedede; }
+
+.container .second-menu .in-second-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 11px; }
+  .container .second-menu .in-second-menu .first .in-a {
+    width: 971px;
+    height: 19px;
+    color: #5b5b5b;
+    font-family: "Segoe UI Symbol";
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 11px 11px 9px 18px; }
+    .container .second-menu .in-second-menu .first .in-a:hover {
+      background-image: -webkit-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+      background-image: -o-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#79b260), to(#92d774));
+      background-image: linear-gradient(to top, #79b260 0%, #92d774 100%);
+      font-family: "Segoe WP"; }
+
+.b {
+  margin-left: 480px; }
+
+.wrapper4 {
+  max-width: 190px;
+  height: 866px; }
+  .wrapper4 .aside {
+    max-width: 190px;
+    height: 866px;
+    border: 1px solid #d6d6d6;
+    margin-top: 18px;
+    position: relative; }
+    .wrapper4 .aside h3 {
+      width: 107px;
+      height: 24px;
+      color: #6b6969;
+      font-family: "Segoe WP";
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 30px;
+      position: absolute;
+      top: 11px;
+      left: 18px; }
+    .wrapper4 .aside .all {
+      width: 148px;
+      height: 38px;
+      color: #696969;
+      font-family: "Segoe WPN - Semibold";
+      font-size: 17px;
+      font-weight: 400;
+      position: absolute;
+      top: 57px;
+      left: 19px; }
+    .wrapper4 .aside .fiction {
+      position: absolute;
+      top: 82px;
+      left: 19px;
+      font-family: "Segoe WPN - Semibold";
+      font-weight: 600;
+      line-height: 25.67px; }
+    .wrapper4 .aside .block-for-aside {
+      max-width: 190px;
+      height: 365px;
+      position: relative;
+      margin-top: 110px; }
+      .wrapper4 .aside .block-for-aside .lite {
+        padding: 0px 114px 0px 26px;
+        color: #555454;
+        font-family: "Segoe UI Symbol";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26.67px;
+        border-bottom: 1px solid #dedede;
+        -webkit-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        transition-duration: 1s; }
+        .wrapper4 .aside .block-for-aside .lite:hover {
+          background-image: -webkit-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+          background-image: -o-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+          background-image: -webkit-gradient(linear, left bottom, left top, from(#79b260), to(#92d774));
+          background-image: linear-gradient(to top, #79b260 0%, #92d774 100%); }
+    .wrapper4 .aside .fiction1 {
+      position: absolute;
+      top: 368px;
+      left: 23px;
+      font-family: "Segoe WPN - Semibold";
+      font-weight: 600;
+      line-height: 25.67px; }
+    .wrapper4 .aside .second-block-for-aside {
+      max-width: 190px;
+      height: 365px;
+      position: relative;
+      top: -80px; }
+      .wrapper4 .aside .second-block-for-aside .lite1 {
+        padding: 0px 114px 0px 26px;
+        color: #555454;
+        font-family: "Segoe UI Symbol";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26.67px;
+        border-bottom: 1px solid #dedede;
+        -webkit-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        transition-duration: 1s; }
+        .wrapper4 .aside .second-block-for-aside .lite1:hover {
+          background-image: -webkit-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+          background-image: -o-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+          background-image: -webkit-gradient(linear, left bottom, left top, from(#79b260), to(#92d774));
+          background-image: linear-gradient(to top, #79b260 0%, #92d774 100%); }
+    .wrapper4 .aside .fiction2 {
+      position: absolute;
+      top: 678px;
+      left: 23px;
+      font-family: "Segoe WPN - Semibold";
+      font-weight: 600;
+      line-height: 25.67px; }
+    .wrapper4 .aside .third-block-for-aside {
+      max-width: 190px;
+      height: 365px;
+      position: relative;
+      top: -134px; }
+      .wrapper4 .aside .third-block-for-aside .lite1 {
+        padding: 1px 114px 1px 26px;
+        color: #555454;
+        font-family: "Segoe UI Symbol";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26.67px;
+        border-bottom: 1px solid #dedede;
+        -webkit-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        transition-duration: 1s; }
+        .wrapper4 .aside .third-block-for-aside .lite1:hover {
+          background-image: -webkit-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+          background-image: -o-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+          background-image: -webkit-gradient(linear, left bottom, left top, from(#79b260), to(#92d774));
+          background-image: linear-gradient(to top, #79b260 0%, #92d774 100%); }
+      .wrapper4 .aside .third-block-for-aside .lite {
+        padding: 1px 114px 1px 26px;
+        color: #555454;
+        font-family: "Segoe UI Symbol";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26.67px; }
+        .wrapper4 .aside .third-block-for-aside .lite:hover {
+          background-image: -webkit-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+          background-image: -o-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+          background-image: -webkit-gradient(linear, left bottom, left top, from(#79b260), to(#92d774));
+          background-image: linear-gradient(to top, #79b260 0%, #92d774 100%); }
+
+.wrapper2 {
+  max-width: 1280px;
+  height: 351px;
+  margin: 0 auto;
+  background: #3f4740;
+  margin-top: 50px;
+  position: relative; }
+  .wrapper2 .container2 {
+    width: 996px;
+    height: 298px;
+    margin-left: 152px;
+    margin-top: 23px;
+    position: absolute; }
+    .wrapper2 .container2 .the-first-block {
+      width: 207px;
+      height: 298px; }
+      .wrapper2 .container2 .the-first-block .flex .block h3 {
+        width: 213px;
+        height: 20px;
+        color: #dddddd;
+        font-family: "Segoe WP";
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 20px; }
+      .wrapper2 .container2 .the-first-block .flex .block .in-block {
+        opacity: 0.7;
+        color: #dddddd;
+        font-family: "Segoe WP";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        padding: 0 0 0 11px;
+        border-bottom: 1px solid #6d6b6d; }
+    .wrapper2 .container2 .the-second-block {
+      width: 207px;
+      height: 298px;
+      margin-left: 246px;
+      margin-top: -298px; }
+      .wrapper2 .container2 .the-second-block .flex .block h3 {
+        width: 213px;
+        height: 20px;
+        color: #dddddd;
+        font-family: "Segoe WP";
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 20px; }
+      .wrapper2 .container2 .the-second-block .flex .block .in-block {
+        opacity: 0.7;
+        color: #dddddd;
+        font-family: "Segoe WP";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        padding: 0 0 0 11px;
+        border-bottom: 1px solid #6d6b6d; }
+    .wrapper2 .container2 .the-third-block {
+      width: 207px;
+      height: 298px;
+      margin-left: 492px;
+      margin-top: -298px; }
+      .wrapper2 .container2 .the-third-block .flex .block h3 {
+        width: 213px;
+        height: 20px;
+        color: #dddddd;
+        font-family: "Segoe WP";
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 20px; }
+      .wrapper2 .container2 .the-third-block .flex .block .in-block {
+        opacity: 0.7;
+        color: #dddddd;
+        font-family: "Segoe WP";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        padding: 0 0 0 11px;
+        border-bottom: 1px solid #6d6b6d; }
+    .wrapper2 .container2 .the-fourth-block {
+      width: 207px;
+      height: 298px;
+      margin-left: 738px;
+      margin-top: -298px; }
+      .wrapper2 .container2 .the-fourth-block .flex .block h3 {
+        width: 213px;
+        height: 20px;
+        color: #dddddd;
+        font-family: "Segoe WP";
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 20px; }
+      .wrapper2 .container2 .the-fourth-block .flex .block .in-block {
+        opacity: 0.7;
+        color: #dddddd;
+        font-family: "Segoe WP";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        padding: 0 0 0 11px;
+        border-bottom: 1px solid #6d6b6d; }
+
+.wrapper5 {
+  max-width: 1280px;
+  height: 100px;
+  background: #303031;
+  position: relative;
+  margin: 0 auto;
+  border-bottom: 1px solid #535253; }
+  .wrapper5 span {
+    width: 599px;
+    height: 20px;
+    color: #dddddd;
+    font-family: "Segoe WP";
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    position: absolute;
+    top: 29px;
+    left: 392px; }
+  .wrapper5 .position {
+    position: absolute;
+    top: 58px;
+    left: 587px; }
+
+footer {
+  max-width: 1280px;
+  height: 66px;
+  background: #2f312e;
+  margin: 0 auto;
+  position: relative; }
+  footer span {
+    width: 658px;
+    height: 16px;
+    color: #dddddd;
+    font-family: "Segoe WP";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    position: absolute;
+    top: 17px;
+    left: 327px; }
