@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Segoe WP SemiLight';
+    src: url('SegoeWP-SemiLight.eot');
+    src: url('SegoeWP-SemiLight.eot?#iefix') format('embedded-opentype'),
+        url('SegoeWP-SemiLight.woff') format('woff'),
+        url('SegoeWP-SemiLight.ttf') format('truetype'),
+        url('SegoeWP-SemiLight.svg#SegoeWP-SemiLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+

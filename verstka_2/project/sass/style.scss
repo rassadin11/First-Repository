@@ -1,0 +1,976 @@
+@import "nullstyle.scss";
+
+@font-face {
+    font-family: 'Helvetica LT STD';
+    src: url('../Fonts/HelveticaLT STD/HelveticaLTStd-Roman.eot');
+    src: url('../Fonts/HelveticaLT STD/HelveticaLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/HelveticaLT STD/HelveticaLTStd-Roman.woff') format('woff'),
+        url('../Fonts/HelveticaLT STD/HelveticaLTStd-Roman.ttf') format('truetype'),
+        url('../Fonts/HelveticaLT STD/HelveticaLTStd-Roman.svg#HelveticaLTStd-Roman') format('svg');
+    font-weight: 500;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'Segoe WP';
+    src: url('../Fonts/Segoe WP/SegoeWP-Light.eot');
+    src: url('../Fonts/Segoe WP/SegoeWP-Light.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Segoe WP/SegoeWP-Light.woff') format('woff'),
+        url('../Fonts/Segoe WP/SegoeWP-Light.ttf') format('truetype'),
+        url('../Fonts/Segoe WP/SegoeWP-Light.svg#SegoeWP-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Symbol';
+    src: url('../Fonts/SegoeUISymbol/SegoeUISymbol.eot');
+    src: url('../Fonts/SegoeUISymbol/SegoeUISymbol.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/SegoeUISymbol/SegoeUISymbol.woff') format('woff'),
+        url('../Fonts/SegoeUISymbol/SegoeUISymbol.ttf') format('truetype'),
+        url('../Fonts/SegoeUISymbol/SegoeUISymbol.svg#SegoeUISymbol') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe WPN - Semibold';
+    src: url('../Fonts/Segoe WPN - Semibold/SegoeWP-Semibold.eot');
+    src: url('../Fonts/Segoe WPN - Semibold/SegoeWP-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Segoe WPN - Semibold/SegoeWP-Semibold.woff') format('woff'),
+        url('../Fonts/Segoe WPN - Semibold/SegoeWP-Semibold.ttf') format('truetype'),
+        url('../Fonts/Segoe WPN - Semibold/SegoeWP-Semibold.svg#SegoeWP-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe WPN - Semi Light';
+    src: url('../Fonts/Segoe WPN - Semi Light/SegoeWP-SemiLight.eot');
+    src: url('../Fonts/Segoe WPN - Semi Light/SegoeWP-SemiLight.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Segoe WPN - Semi Light/SegoeWP-SemiLight.woff') format('woff'),
+        url('../Fonts/Segoe WPN - Semi Light/SegoeWP-SemiLight.ttf') format('truetype'),
+        url('../Fonts/Segoe WPN - Semi Light/SegoeWP-SemiLight.svg#SegoeWP-SemiLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe WPN';
+    src: url('../Fonts/Segoe WPN/SegoeWPN.eot');
+    src: url('../Fonts/Segoe WPN/SegoeWPN.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Segoe WPN/SegoeWPN.woff') format('woff'),
+        url('../Fonts/Segoe WPN/SegoeWPN.ttf') format('truetype'),
+        url('../Fonts/Segoe WPN/SegoeWPN.svg#SegoeWPN') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper{
+	max-width: 1280px;
+	height: 30px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+	
+	.line{
+		width: 1280px;
+		height: 28px;
+		background-color: #424242;
+	}
+
+	.container{
+		max-width: 995px;
+		margin: 0 auto;
+		position: relative;
+
+		.second-menu{
+
+			.in-second-menu{
+				display: flex;
+				margin-top: 11px;
+
+				.first{
+
+					.in-a{
+						width: 971px;
+						height: 19px;
+						color: #5b5b5b;
+						font-family: "Segoe UI Symbol";
+						font-size: 19px;
+						font-weight: 400;
+						line-height: 26px;
+						padding: 11px 11px 9px 18px;
+
+						&:hover{
+							background-image: -webkit-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+							background-image: -o-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+							background-image: linear-gradient(to top, #79b260 0%, #92d774 100%);
+							font-family: "Segoe WP";
+						}
+					}
+				}
+			}
+		}
+
+		.ul{
+			display: flex;
+			position: absolute;
+			top: -27px;
+			right: 0;
+			float: right;
+
+			.li{
+				margin-left: 30px;
+				.a{
+					text-decoration: none;
+					color: #fff;
+					font-family: "Segoe WP";
+					font-size: 16px;
+					font-weight: 300;
+					line-height: 26px;
+					float: right;
+					transition-duration: 1s;
+
+					&:hover{
+						color: black;
+						padding: 7px 7px -1px 7px;
+						background: orange;
+					}
+				}
+			}
+		}
+	}
+
+	.flex{
+
+		.size{
+			margin-top: 30px;
+			display: flex;
+
+			.block{
+				
+				.friend{
+					width: 714px;
+					height: 314px;
+				}
+				.first-arrow{
+					position: absolute;
+					padding: 7px 13px 7px 9px;
+					background: #512224;
+					top: 127px;
+					left: 12px;
+					border-radius: 20px;
+				}
+
+				.right-arrow{
+					position: absolute;
+					padding: 7px 9px 7px 13px;
+					background: #512224;
+					top: 127px;
+					right: 295px;
+					border-radius: 20px;
+				}
+
+				.books1{
+					position: absolute;
+					top: 41px;
+					left: 60px;
+				}
+
+				.disk{
+					position: absolute;
+					top: 151px;
+					left: 164px;
+					z-index: 2;
+				}
+
+				.man{
+					color: #fff;
+					font-family: "Segoe WP";
+					font-size: 25px;
+					font-weight: 400;
+					line-height: 28px;
+					font-family: "Segoe WP - Bold";
+					font-size: 47px;
+					font-weight: 700;
+					position: absolute;
+					top: 130px;
+					left: 303px;
+
+					span{
+						color: #fff;
+						font-size: 25px;
+						font-weight: 400;
+						line-height: 28px;
+						font-family: "Segoe WP";
+						margin-left: 70px;
+					}
+				}
+
+				.Lee{
+					color: #fff;
+					font-family: "Segoe WP";
+					font-size: 21px;
+					font-weight: 700;
+					line-height: 28px;
+					position: absolute;
+					top: 207px;
+					left: 409px;
+				}
+			}
+
+			.advertisment{
+				background: url(../img/background.png) no-repeat;
+				width: 269px;
+				height: 348px;
+				position: relative;
+				margin-left: 10px;
+
+				.deal{
+					width: 231px;
+					height: 22px;
+					color: #ffffff;
+					font-family: "Segoe WPN - Semibold";
+					font-size: 27px;
+					font-weight: 400;
+					line-height: 24.21px;
+					position: absolute;
+					top: 18px;
+					left: 26px;
+				}
+
+				.human{
+					width: 179px;
+					height: 16px;
+					color: #ffffff;
+					font-family: "Segoe WP";
+					font-size: 15px;
+					font-weight: 300;
+					line-height: 26px;
+					position: absolute;
+					top: 48px;
+					left: 48px;
+				}
+
+				.bookes{
+					position: absolute;
+					top: 75px;
+					left: 88px;
+					z-index: 3;
+				}
+
+				.station{
+					width: 175px;
+					height: 12px;
+					background-color: #ffffff;
+					position: absolute;
+					top: 178px;
+					left: 44px;
+				}
+
+				.station1{
+					width: 175px;
+					height: 12px;
+					background-color: #ffffff;
+					position: absolute;
+					top: 190px;
+					left: 44px;
+				}
+
+				.save{
+					width: 154px;
+					height: 22px;
+					color: #ffffff;
+					font-family: "Segoe WPN";
+					font-size: 21px;
+					font-weight: 300;
+					line-height: 26px;
+					position: absolute;
+					top: 211px;
+					left: 60px;
+				}
+
+				.costs1{
+					width: 85px;
+					height: 26px;
+					color: #ffffff;
+					font-family: "Segoe WPN - Semibold";
+					font-size: 29px;
+					font-weight: 400;
+					line-height: 26px;
+					position: absolute;
+					top: 237px;
+					left: 87px;
+				}
+
+				.buy{
+					padding: 7px 15px 3px 19px;
+					background-image: -webkit-linear-gradient(bottom, #51a451 0%, #61c261 100%);
+					background-image: -o-linear-gradient(bottom, #51a451 0%, #61c261 100%);
+					background-image: linear-gradient(to top, #51a451 0%, #61c261 100%);
+					text-shadow: 1px 1px 0 rgba(74, 151, 74, 0.75);
+					color: #fff;
+					font-family: "Segoe WPN - Semibold";
+					font-size: 19px;
+					font-weight: 400;
+					line-height: 26px;
+					position: absolute;
+					top: 270px;
+					left: 78px;
+				}
+			}
+		}
+	}
+}
+
+.c{
+	position: absolute;
+	margin-left: 158px;
+}
+
+.d{
+	position: absolute;
+	margin-left: 158px * 2;
+}
+
+.e{
+	position: absolute;
+	margin-left: 158px * 3;
+}
+
+.f{
+	position: absolute;
+	margin-left: 158px * 4;
+}
+
+.ab{
+	margin-top: -35px;
+}
+
+.ac{
+	position: absolute;
+	margin-top: 130px * 2;
+}
+
+.ad{
+	position: absolute;
+	margin-top: 170px * 3;
+}
+
+.ae{
+	position: absolute;
+	margin-top: 190px * 4;
+}
+
+.wrapper-second{
+	max-width: 1280px;
+	height: 112px;
+	position: relative;
+	margin: 0 auto;
+
+	.bg1{
+		background: #f5f5f5;
+		height: 112px;
+		
+		.input{
+			width: 428px;
+			height: 40px;
+			background-color: #79b260;
+			margin-top: -60px;
+			margin-left: 320px;
+		}
+
+		.books{
+			margin-top: 21px;
+			margin-left: 140px;
+		}
+
+		.first__input{
+			position: absolute;
+			top: 38px;
+			left: 322px;
+			width: 328px;
+			height: 33px;
+			border: 4px solid #79b260;;
+		}
+
+		button{
+			position: absolute;
+			top: 43px;
+			left: 650px;
+			background: none;
+
+			span{
+				color: #ffffff;
+				font-family: "Segoe WPN";
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 26px;
+			}
+		}
+
+		.block{
+			display: block;
+
+			.magazine{
+				width: 27px;
+				height: 29px;
+				position: absolute;
+				top: 25px;
+				left: 829px;
+			}
+
+			.my__cart{
+				width: 197px;
+				height: 20px;
+				color: #6d6d6d;
+				font-family: "Segoe WP";
+				font-size: 23px;
+				font-weight: 700;
+				line-height: 26px;
+				position: absolute;
+				top: 30px;
+				left: 865px;
+
+				span{
+					font-size: 13px;
+				}
+			}
+
+			.cost{
+				color: #6d6d6d;
+				font-family: "Segoe WP";
+				font-size: 27px;
+				font-weight: 700;
+				line-height: 26px;
+				position: absolute;
+				top: 63px;
+				left: 832px;
+			}
+
+			.checkout{
+				color: #ffffff;
+			    font-family: "Segoe WP";
+			    font-size: 15px;
+			    font-weight: 400;
+			    line-height: 26px;
+			    padding: 2px 11px 2px 11px;
+			    background: #3d3d3d;
+			    position: absolute;
+			    top: 62px;
+			    left: 920px;
+			}
+
+			.star{
+				position: absolute;
+				top: 35px;
+				left: 1066px;
+			}
+
+			.twenty{
+				color: #ffffff;
+				font-family: "Segoe WP";
+				font-size: 13px;
+				font-weight: 400;
+				padding: 3px 7px 2px 7px;
+				background: #a8cd98;
+				border-radius: 15px;
+				position: absolute;
+				top: 56px;
+				left: 1109px;
+			}
+
+			.list{
+				width: 177px;
+				height: 17px;
+				color: #6d6d6d;
+				font-family: "Segoe WP";
+				font-size: 21px;
+				font-weight: 800;
+				position: absolute;
+				top: 68px;
+				right: 71px;
+			}
+		}
+	}
+}
+
+.wrapper3{
+	max-width: 800px;
+	height: 1120px;
+	border: 1px solid #d8dce0;
+	margin-left: 200px;
+	margin-top: -815px;
+	position: relative;
+
+    main{
+		
+		ul{
+			display: flex;
+			margin-top: -40px;
+			z-index: 3;
+
+			li{
+
+				a{
+					width: 92px;
+					height: 12px;
+					text-shadow: 1px 1px 0 #ffffff;
+					color: #6b6969;
+					font-family: "Helvetica LT Std";
+					font-size: 17px;
+					font-weight: 300;
+					line-height: 30px;
+					background: #f8f8f8;
+					padding: 15px 26px 15px 22px;
+					border: 1px solid #c4c4c4;
+
+					&:hover{
+						background-color: #fff;
+						border: none;
+					}
+				}
+			}
+		}
+		
+		.t{
+			position: absolute;
+		}
+
+		.book{
+			position: absolute;
+			top: 69px;
+			left: 29px;
+		}
+
+		.span{
+			width: 50px;
+			height: 50px;
+			border-radius: 20px;
+			background-color: #f05356;
+			position: absolute;
+			top: 59px;
+			left: 100px;
+
+			.span1{
+				width: 37px;
+				height: 15px;
+				color: #ffffff;
+				font-family: "Segoe WP";
+				font-size: 19px;
+				font-weight: 700;
+				line-height: 26px;
+				margin-left: 10px;
+				margin-top: 5px;
+				position: absolute;
+			}
+
+			.span2{
+				width: 19px;
+				height: 11px;
+				color: #ffffff;
+				font-family: "Segoe WP";
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 26px;
+				margin-left: 15px;
+				margin-top: 5px;
+				position: absolute;
+			}
+		}
+
+		.block{
+
+			span{
+				width: 93px;
+				height: 32px;
+				color: #595959;
+				font-family: "Segoe WPN - Semi Light";
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 16px;
+				position: absolute;
+				text-align: center;
+				top: 235px;
+				left: 39px;
+			}
+
+			.costs{
+				width: 36px;
+				height: 21px;
+				color: #f05356;
+				font-family: "Helvetica LT Std";
+				font-size: 22px;
+				font-weight: 400;
+				line-height: 20px;
+				position: absolute;
+				top: 274px;
+				left: 63px;
+			}
+		}
+	}
+
+	.spanion{
+		position: absolute;
+		bottom: 8px;
+		right: 29px;
+
+		.number{
+			width: 138px;
+			height: 11px;
+			color: #646464;
+			font-family: "Helvetica LT Std";
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 30px;
+
+			&:hover{
+				border-bottom: 2px solid #dedede;
+			}
+			
+		}
+	}
+}
+
+.b{
+	margin-left: 480px;
+	margin-top: 350px;
+}
+
+.wrapper4{
+	max-width: 190px;
+	height: 866px;
+	margin-top: -30px;
+
+	.aside{
+		max-width: 190px;
+		height: 866px;
+		border: 1px solid #d6d6d6;
+		position: relative;
+
+		h3{
+			width: 107px;
+			height: 24px;
+			color: #6b6969;
+			font-family: "Segoe WP";
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 30px;
+			position: absolute;
+			top: 11px;
+			left: 18px;
+		}
+
+		.all{
+			width: 148px;
+			height: 38px;
+			color: #696969;
+			font-family: "Segoe WPN - Semibold";
+			font-size: 17px;
+			font-weight: 400;
+			position: absolute;
+			top: 57px;
+			left: 19px;
+		}
+		.fiction{
+			position: absolute;
+			top: 82px;
+			left: 19px;
+			font-family: "Segoe WPN - Semibold";
+			font-weight: 600;
+			line-height: 25.67px;
+		}
+		
+		.block-for-aside{
+			max-width: 190px;
+			height: 365px;
+			position: relative;
+			margin-top: 110px;
+
+			.lite{
+				padding: 0px 114px 0px 26px;
+				color: #555454;
+				font-family: "Segoe UI Symbol";
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 26.67px;
+				border-bottom: 1px solid #dedede;
+				transition-duration: 1s;
+
+				&:hover{
+					background-image: -webkit-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+					background-image: -o-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+					background-image: linear-gradient(to top, #79b260 0%, #92d774 100%);
+				}
+			}
+		}
+		.fiction1{
+			position: absolute;
+			top: 368px;
+			left: 23px;
+			font-family: "Segoe WPN - Semibold";
+			font-weight: 600;
+			line-height: 25.67px;
+		}
+		.second-block-for-aside{
+			max-width: 190px;
+			height: 365px;
+			position: relative;
+			top: -80px;
+			.lite1{
+				padding: 0px 114px 0px 26px;
+				color: #555454;
+				font-family: "Segoe UI Symbol";
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 26.67px;
+				border-bottom: 1px solid #dedede;
+				transition-duration: 1s;
+
+				&:hover{
+					background-image: -webkit-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+					background-image: -o-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+					background-image: linear-gradient(to top, #79b260 0%, #92d774 100%);
+				}
+			}
+		}
+		
+		.fiction2{
+			position: absolute;
+			top: 678px;
+			left: 23px;
+			font-family: "Segoe WPN - Semibold";
+			font-weight: 600;
+			line-height: 25.67px;
+		}
+		.third-block-for-aside{
+			max-width: 190px;
+			height: 365px;
+			position: relative;
+			top: -134px;
+			.lite1{
+				padding: 1px 114px 1px 26px;
+				color: #555454;
+				font-family: "Segoe UI Symbol";
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 26.67px;
+				border-bottom: 1px solid #dedede;
+				transition-duration: 1s;
+
+				&:hover{
+					background-image: -webkit-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+					background-image: -o-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+					background-image: linear-gradient(to top, #79b260 0%, #92d774 100%);
+				}
+			}
+			.lite{
+				padding: 1px 114px 1px 26px;
+				color: #555454;
+				font-family: "Segoe UI Symbol";
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 26.67px;
+				
+				&:hover{
+					background-image: -webkit-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+					background-image: -o-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+					background-image: linear-gradient(to top, #79b260 0%, #92d774 100%);
+				}
+			}
+		}
+	}
+}
+
+.wrapper2{
+	max-width: 1280px;
+	height: 351px;
+	margin: 0 auto;
+	background: #3f4740;
+	margin-top: 50px;
+	position: relative;
+
+	.container2{
+		width: 996px;
+		height: 298px;
+		margin-left: 152px;
+		margin-top: 23px;
+		position: absolute;
+		
+		.the-first-block{
+			width: 207px;
+			height: 298px;
+
+			.flex{
+				.block{
+					h3{
+						width: 213px;
+						height: 20px;
+						color: #dddddd;
+						font-family: "Segoe WP";
+						font-size: 20px;
+						font-weight: 300;
+						line-height: 20px;
+					}
+
+					.in-block{
+						opacity: 0.7;
+						color: #dddddd;
+						font-family: "Segoe WP";
+						font-size: 14px;
+						font-weight: 300;
+						line-height: 24px;
+						padding: 0 0 0 11px;
+						border-bottom: 1px solid #6d6b6d;
+					}
+				}
+			}
+		}
+
+		.the-second-block{
+			width: 207px;
+			height: 298px;
+			margin-left: 246px;
+			margin-top: -298px;
+			.flex{
+				.block{
+					h3{
+						width: 213px;
+						height: 20px;
+						color: #dddddd;
+						font-family: "Segoe WP";
+						font-size: 20px;
+						font-weight: 300;
+						line-height: 20px;
+					}
+
+					.in-block{
+						opacity: 0.7;
+						color: #dddddd;
+						font-family: "Segoe WP";
+						font-size: 14px;
+						font-weight: 300;
+						line-height: 24px;
+						padding: 0 0 0 11px;
+						border-bottom: 1px solid #6d6b6d;
+					}
+				}
+			}
+		}
+
+		.the-third-block{
+			width: 207px;
+			height: 298px;
+			margin-left: 246px * 2;
+			margin-top: -298px;
+			.flex{
+				.block{
+					h3{
+						width: 213px;
+						height: 20px;
+						color: #dddddd;
+						font-family: "Segoe WP";
+						font-size: 20px;
+						font-weight: 300;
+						line-height: 20px;
+					}
+					.in-block{
+						opacity: 0.7;
+						color: #dddddd;
+						font-family: "Segoe WP";
+						font-size: 14px;
+						font-weight: 300;
+						line-height: 24px;
+						padding: 0 0 0 11px;
+						border-bottom: 1px solid #6d6b6d;
+					}
+				}
+			}
+		}
+
+		.the-fourth-block{
+			width: 207px;
+			height: 298px;
+			margin-left: 246px * 3;
+			margin-top: -298px;
+			.flex{
+				.block{
+					h3{
+						width: 213px;
+						height: 20px;
+						color: #dddddd;
+						font-family: "Segoe WP";
+						font-size: 20px;
+						font-weight: 300;
+						line-height: 20px;
+					}
+
+					.in-block{
+						opacity: 0.7;
+						color: #dddddd;
+						font-family: "Segoe WP";
+						font-size: 14px;
+						font-weight: 300;
+						line-height: 24px;
+						padding: 0 0 0 11px;
+						border-bottom: 1px solid #6d6b6d;
+					}
+				}
+			}
+		}
+	}
+}
+
+.wrapper5{
+	max-width: 1280px;
+	height: 100px;
+	background: #303031;
+	position: relative;
+	margin: 0 auto;
+	border-bottom: 1px solid #535253;
+
+	span{
+		width: 599px;
+		height: 20px;
+		color: #dddddd;
+		font-family: "Segoe WP";
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 24px;
+		position: absolute;
+		top: 29px;
+		left: 392px;
+	}
+
+	.position{
+		position: absolute;
+		top: 58px;
+		left: 587px;
+	}
+}
+
+footer{
+	max-width: 1280px;
+	height: 66px;
+	background: #2f312e;
+	margin: 0 auto;
+	position: relative;
+
+	span{
+		width: 658px;
+		height: 16px;
+		color: #dddddd;
+		font-family: "Segoe WP";
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 24px;
+		position: absolute;
+		top: 17px;
+		left: 327px;
+	}
+}
+
+a:visited{
+	color: inherit;
+}

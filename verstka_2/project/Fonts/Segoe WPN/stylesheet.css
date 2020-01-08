@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Segoe WP N';
+    src: url('SegoeWPN.eot');
+    src: url('SegoeWPN.eot?#iefix') format('embedded-opentype'),
+        url('SegoeWPN.woff') format('woff'),
+        url('SegoeWPN.ttf') format('truetype'),
+        url('SegoeWPN.svg#SegoeWPN') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
