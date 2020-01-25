@@ -1,0 +1,263 @@
+@import "mixins.scss";
+@import "nullstyle.scss";
+@import "./Fonts/Helvetica/Helvetica Neue.scss";
+@import "./Fonts/Lobster/Lobster.scss";
+@import "./Fonts/Helvetica/HelveticaCE.scss";
+@import "./Fonts/Perpetua Titling MT.scss";
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue";
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('.Fonts/Font Awesome/FontAwesome.eot');
+    src: url('.Fonts/Font Awesome/FontAwesome.eot?#iefix') format('embedded-opentype'),
+        url('.Fonts/Font Awesome/FontAwesome.woff') format('woff'),
+        url('.Fonts/Font Awesome/FontAwesome.ttf') format('truetype'),
+        url('.Fonts/Font Awesome/FontAwesome.svg#FontAwesome') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('../Fonts/Times New Roman/TimesNewRomanPSMT.eot');
+    src: url('../Fonts/Times New Roman/TimesNewRomanPSMT.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Times New Roman/TimesNewRomanPSMT.woff') format('woff'),
+        url('../Fonts/Times New Roman/TimesNewRomanPSMT.ttf') format('truetype'),
+        url('../Fonts/Times New Roman/TimesNewRomanPSMT.svg#TimesNewRomanPSMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header{
+    .container__header{
+        max-width: 1280px;
+        height: 36px;
+        margin: 0 auto;
+        background: #000;
+        position: relative;
+
+        .menu{
+            max-width: 506px;
+            height: 14px;
+            @include flexbox(flex);
+            position: absolute;
+            right: 10px;
+            top: 20%;
+            font-family: "Helvetica Neue";
+
+            &__part{
+                a{
+                    text-transform: uppercase;
+                    padding: 0 20px 0 20px;
+                    border-left: 1px solid #fff;
+                    color: #fff;
+                    font-size: 19px;
+                }
+
+                .home{
+                    border: none;
+                    padding: 0 20px 0 0;
+                }
+            }
+        }
+    }
+}
+
+.section {
+    @include flexbox(flex);
+    max-width: 1310px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+
+    .section__logo {
+        color: #fff;
+        font-family: "Lobster 1.4";
+        font-size: 57px;
+        font-weight: 400;
+        padding: 47px 23px 25px 25px;
+        background: #da2020;
+        display: inline-block;
+        line-height: 22px;
+        width: 103px;
+        height: 116px;
+        margin-top: -35px;
+        font-style: italic;
+        z-index: 1;
+    }
+
+    .section__title {
+        color: #000000;
+        font-family: "Perpetua Titling MT";
+        position: absolute;
+        font-size: 23px;
+        font-weight: 300;
+        line-height: 22px;
+        margin-top: 25px;
+        margin-left: 150px;
+    }
+
+    .icons {
+        @include flexbox(flex);
+        position: absolute;
+        right: 20px;
+        margin-top: 20px;
+
+        .facebook {
+            border-radius: 50%;
+            color: #fff;
+            padding: 4px 9px;
+            box-sizing: content-box;
+            background: #b01111;
+        }
+
+        .twitter {
+            border-radius: 50%;
+            color: #fff;
+            padding: 5px 8px 6px 7px;
+            box-sizing: content-box;
+            background: #b01111;
+            margin-left: 20px;
+        }
+
+        .inner {
+            border-radius: 50%;
+            color: #fff;
+            padding: 5px 6px 8px 7px;
+            box-sizing: content-box;
+            background: #b01111;
+            margin-left: 20px;
+        }
+    }
+}
+
+.first {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 366px;
+    border-bottom: 1px solid #cccccc;
+    margin-top: -19px;
+
+    &__icons {
+        max-width: 100%;
+        height: 280px;
+        position: relative;
+
+        .bg{
+            height: 100%;
+            width: 100%;
+        }
+        &__people {
+            position: absolute;
+            top: 224px * 100% / 359px;
+            left: 188px * 100% / 1280px;
+            padding: 54px 22px 0 21px;
+            background: #c8cccf;
+            border: 3px solid #fff;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.28);
+        }
+    }
+
+    &__title {
+        font-weight: 300;
+        line-height: 22px;
+        font-family: "Helvetica Neue";
+        font-size: 25px;
+        margin-top: 17px;
+        position: absolute;
+        left: 32.5%;
+    }
+    &__text {
+        font-weight: 300;
+        line-height: 22px;
+        font-family: "Helvetica Neue";
+        font-size: 19px;
+        position: absolute;
+        margin-top: 44px;
+        left: 32.5%;
+    }
+}
+
+.last {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 300px;
+    border-bottom: 1px solid #ccc;
+}
+
+.wrapper {
+    max-width: 1005px;
+    padding: 0 15px;
+    height: auto;
+    margin: 0 auto;
+    .grids {
+        &__left {
+            float: left;
+            max-width: 432px;
+            height: 169px;
+        }
+
+        &__title {
+            color: #000000;
+            font-family: "Helvetica CE";
+            font-size: 23px;
+            font-weight: 400;
+            line-height: 22px;
+            margin-top: 27px;
+        }
+
+        &__text {
+            color: #585555;
+            font-family: "Helvetica CE";
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: justify;
+            margin-top: 25px;
+        }
+       
+        &__right {
+            float: right;
+        }
+        &__flexbox {
+            @include flexbox(flex);
+            max-width: 501px;
+            height: 186px;
+            margin-top: 20px;
+            &__first {
+                position: relative;
+            }
+            &__text {
+                color: #5b5b5b;
+                font-family: "Helvetica Neue";
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+            }
+            &__second {
+                position: relative;
+            }
+            &__third {
+                position: relative;
+            }
+        }
+        &__icons1 {}
+    }
+}
+
+.footer{
+    max-width: 100%;
+    margin: 0 auto;
+    height: 40px;
+    @include flexbox(flex);
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@import "media.scss";

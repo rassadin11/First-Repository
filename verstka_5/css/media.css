@@ -1,0 +1,87 @@
+@media (max-width: 656px) {
+  .header__burger {
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    width: 30px;
+    height: 20px;
+    z-index: 5; }
+  .header__burger span {
+    position: absolute;
+    background: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s; }
+  .header__burger:before,
+  .header__burger:after {
+    content: '';
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0; }
+  header__burger:before {
+    top: 0; }
+  .header__burger:after {
+    bottom: 0; }
+  .header__menu.active {
+    left: 0; }
+  .header__burger.active:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 9px; }
+  .header__burger.active:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    bottom: 9px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s; }
+  .header__burger.active span {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0); }
+  .header .container__header {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+    .header .container__header .menu {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 300px;
+      display: none;
+      z-index: 2;
+      padding: 70px 0 0 0;
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+  .header .container__header.active {
+    background: #18b5a4;
+    width: 100%;
+    height: 200px; }
+    .header .container__header.active .menu.active {
+      left: 0;
+      display: block;
+      padding: 40px 0 0 0; }
+      .header .container__header.active .menu.active .menu__part {
+        margin-top: 2%; }
+        .header .container__header.active .menu.active .menu__part a {
+          padding: 0;
+          margin-left: 4%;
+          border: none; }
+        .header .container__header.active .menu.active .menu__part .home {
+          margin-top: -20px; }
+    .header .container__header.active .header__burger.active {
+      top: 5px;
+      right: 5px; }
+  .section .section__logo.active {
+    margin-top: 0; } }

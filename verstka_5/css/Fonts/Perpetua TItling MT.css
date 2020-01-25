@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Perpetua Titling MT';
+  src: url("../Fonts/PerpetuaTitlingMT/PerpetuaTitlingMT-Light.eot");
+  src: url("../Fonts/PerpetuaTitlingMT/PerpetuaTitlingMT-Light.eot?#iefix") format("embedded-opentype"), url("../Fonts/PerpetuaTitlingMT/PerpetuaTitlingMT-Light.woff") format("woff"), url("../Fonts/PerpetuaTitlingMT/PerpetuaTitlingMT-Light.ttf") format("truetype"), url("../Fonts/PerpetuaTitlingMT/PerpetuaTitlingMT-Light.svg#PerpetuaTitlingMT-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
