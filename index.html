@@ -1,73 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="./sass/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<div class="wrapper">
-			<nav>
-				<ul class="menu">
-					<li><a href="#" class="first">Home</a></li>
-					<li><a href="#">About me</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-			<div class="logo">Kr</div>
-			<div class="icon">
-				<img src="./img/facebook.png" alt="facebook" class="facebook">
-				<img src="./img/facebook.png" alt="facebook" class="facebook1">
-				<img src="./img/facebook.png" alt="facebook" class="facebook2">
+	<header class="header">
+		<div class="container">
+			<div class="header__menu">
+				<nav>
+					<ul class="menu__part">
+						<li><a href="#">Sign in</a></li>
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">Order Status</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</nav>
 			</div>
-			<h1>Hi there,  i am a Web/UI/ux Designer & Developer </h1>
+			<div class="header__burger"></div>
 		</div>
 	</header>
 
-	<section>
-		<div class="wrapper1">
-			<img src="./img/sculptures.png" alt="sculptures" class="sculptures">
-			<div class="profile">
-				<img src="./img/model.png" alt="model" class="model">
-				<p class="in-profile">Krishnanunni</p>
-				<p class="work">Freelance Web designer & developer</p>
+	<section class="first">
+		<div class="container">
+			<div class="flex">
+				<a href="#">
+					<img src="./img/logo.png" alt="logo" class="flex__logo">
+				</a>
+				<div class="input"><div class="background">
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="20" height=""
+							viewBox="0 0 172 172"
+							style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="M0,86c0,-47.49649 38.50351,-86 86,-86c47.49649,0 86,38.50351 86,86c0,47.49649 -38.50351,86 -86,86c-47.49649,0 -86,-38.50351 -86,-86zM86,168.56c45.59663,0 82.56,-36.96337 82.56,-82.56c0,-45.59663 -36.96337,-82.56 -82.56,-82.56c-45.59663,0 -82.56,36.96337 -82.56,82.56c0,45.59663 36.96337,82.56 82.56,82.56z" fill="#000000"></path><g fill="#000000"><path d="M73.49339,32.69727c-10.4537,0 -20.90697,3.97682 -28.86146,11.93131c-15.90897,15.90897 -15.90897,41.81395 0,57.72291c7.95448,7.95448 18.38173,11.9334 28.91604,11.9334c10.53432,0 20.96156,-3.97892 28.91604,-11.9334c15.80147,-15.90897 15.7998,-41.81395 -0.10917,-57.72291c-7.95448,-7.95448 -18.40776,-11.93131 -28.86146,-11.93131zM73.4409,39.03978c8.81443,0 17.62844,3.3306 24.293,10.10267c13.43663,13.43663 13.43621,35.25855 0.10707,48.69518c-13.43663,13.43663 -35.25855,13.43663 -48.69518,0c-13.43663,-13.43663 -13.43663,-35.25855 0,-48.69518c6.66457,-6.66457 15.48067,-10.10267 24.2951,-10.10267zM73.4409,45.48936c-7.41702,0 -14.4049,2.90147 -19.67206,8.27612c-5.05217,5.05217 -7.84657,11.60967 -8.16905,18.70421c-0.10749,1.82738 1.29034,3.22437 3.11772,3.33186h0.10707c1.71989,0 3.1173,-1.39783 3.22479,-3.11772c0.21499,-5.48214 2.47108,-10.53474 6.23334,-14.40448c4.08473,-4.08473 9.46107,-6.34041 15.1582,-6.34041c1.82738,0 3.22479,-1.39741 3.22479,-3.22479c0,-1.82738 -1.39741,-3.22479 -3.22479,-3.22479zM54.84377,86.01339c-1.781,0 -3.22479,1.44379 -3.22479,3.22479c0,1.781 1.44379,3.22479 3.22479,3.22479c1.781,0 3.22479,-1.44379 3.22479,-3.22479c0,-1.781 -1.44379,-3.22479 -3.22479,-3.22479zM106.83092,103.74974c-0.81963,0 -1.62583,0.3229 -2.21704,0.96786c-1.28992,1.28992 -1.28992,3.33144 0,4.51387l2.68733,2.68733c-0.64496,1.28992 -0.96786,2.68775 -0.96786,4.19265c0,2.57983 0.96702,5.05259 2.7944,6.87997l13.75995,13.5437c1.93487,1.93487 4.40554,2.90147 6.87788,2.90147c2.47234,0 4.9451,-0.96702 6.87997,-2.7944c3.76226,-3.76226 3.76226,-9.88852 0,-13.65077l-13.75785,-13.75995c-1.82738,-1.82738 -4.30014,-2.7944 -6.87997,-2.7944c-1.5049,0 -2.90273,0.3229 -4.19265,0.96786l-2.68733,-2.68733c-0.64496,-0.64496 -1.47719,-0.96786 -2.29682,-0.96786zM116.00772,112.77957c0.85994,0 1.71947,0.3229 2.25693,0.96786l13.65078,13.65077c1.28992,1.28992 1.28992,3.33145 0,4.51387c-1.28992,1.28992 -3.33145,1.28992 -4.51387,0l-13.65077,-13.5437c-0.64496,-0.64496 -0.96786,-1.50406 -0.96786,-2.36401c0,-0.85994 0.3229,-1.71947 0.96786,-2.25693c0.64496,-0.64496 1.39699,-0.96786 2.25693,-0.96786z"></path></g><path d="" fill="none"></path><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86h0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="none"></path><path d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56h0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z" fill="none"></path><path d="M0,172v-172h172v172z" fill="none"></path><path d="M3.44,168.56v-165.12h165.12v165.12z" fill="none"></path><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86h0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="none"></path><path d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56h0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z" fill="none"></path></g></g></svg>
+							<span class="input__text">Search</span>
+						</a>
+					</div>
+					<input type="text" class="input__input">
+				</div>	
+				<div class="for-media">
+					<div class="header__burger"><span></span></div>
+					<div class="for-market-and-right">
+						<div class="market">
+							<div class="market__flex">
+								<img src="./img/market.png" alt="market" class="market__market">
+								<span class="market__cart">Your cart</span>
+								<span class="market__count">(2 items)</span>
+							</div>
+							<span class="market__money">$125.0</span>
+							<a href="#" class="market__button">
+								<span>Chechout</span>
+							</a>
+						</div>
+
+						<div class="right">
+							<p><img src="./img/star.png" alt="star" class="right__star"></p>
+							<span class="right__span">Wish list</span>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<section>
-		<div class="wrapper">
-			<div class="flex">
-				<div class="left">
-					<h3>Web Design & Development</h3>
-					<p class="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
-	 				in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	 			</div>
-
-	 			<div class="right">
-					<h3>Latest projects</h3>
-					<div class="flex a">
-						<a href="#"><img src="./img/Yacht.png" alt="yacht"></a>
-						<a href="#"><img src="./img/iphone4.png" alt="iphone"></a>
-						<a href="#"><img src="./img/cap_(2).png" alt="cap"></a>
-					</div>
-
-					<div class="text-for-a">
-						<a href="#"><span class="the-first">Project : Yacht rentel</span></a>
-						<a href="#"><span class="the-second">Project : Mob Apps</span></a>
-						<a href="#"><span class="the-third">Project : Dental Cap</span></a>
-					</div>
-	 			</div>
-	 		</div>
+	<section class="second">
+		<div class="container">
+			<nav>
+				<ul class="second__menu">
+					<li><a href="#">Computers</a></li>
+					<li><a href="#">Cooking</a></li>
+					<li><a href="#">Education</a></li>
+					<li><a href="#">Fiction</a></li>
+					<li><a href="#">Health</a></li>
+					<li><a href="#">Mathematics</a></li>
+					<li><a href="#">Medical</a></li>
+					<li><a href="#">Reference</a></li>
+					<li><a href="#">Science</a></li>
+				</ul>
+			</nav>
+			<div class="second__burger"><span></span></div>
 		</div>
 	</section>
 
-	<footer>
-		<div class="wrapper">
-			<p class="footer">Designed by cssauthor.com</p>
+	<main class="main">
+		<div class="container">
+			<div class="aside">
+				<div class="with__arrow">
+					<p class="aside__title menu">
+						Categories
+					</p>
+					<div class="arrow"></div>
+				</div>
+				<p class="aside__name ">
+					All
+				</p>
+				<div class="categories">
+					<p class="aside__categories sub-menu">
+						Fiction & Literature
+					</p>
+					<nav>
+						<ul class="aside__menu sub-menu__list">
+							<a href="#" class="sub-menu__link"><li>Children</li></a>
+							<a href="#" class="sub-menu__link"><li>Children</li></a>
+							<a href="#" class="sub-menu__link"><li>Children</li></a>
+							<a href="#" class="sub-menu__link"><li>Children</li></a>
+							<a href="#" class="sub-menu__link"><li>Children</li></a>
+							<a href="#" class="sub-menu__link"><li>Children</li></a>
+							<a href="#" class="sub-menu__link"><li>Children</li></a>
+							<a href="#" class="sub-menu__link"><li>Children</li></a>
+							<a href="#" class="sub-menu__link"><li>Children</li></a>
+							<a href="#" class="sub-menu__link"><li>Children</li></a>
+						</ul>
+					</nav>
+				</div>
+				<p class="aside__categories sub-menu">
+					Non - fiction
+				</p>
+				<nav>
+					<ul class="aside__menu sub-menu__list">
+						<a href="#"><li>Children</li></a>
+						<a href="#"><li>Children</li></a>
+						<a href="#"><li>Children</li></a>
+						<a href="#"><li>Children</li></a>
+						<a href="#"><li>Children</li></a>
+						<a href="#"><li>Children</li></a>
+						<a href="#"><li>Children</li></a>
+						<a href="#"><li>Children</li></a>
+						<a href="#"><li>Children</li></a>
+						<a href="#"><li>Children</li></a>
+					</ul>
+				</nav>
+				<p class="aside__categories menu">
+					Other
+				</p>
+				<nav>
+					<ul class="aside__menu sub-menu__list">
+						<a href="#"><li>Children</li></a>
+						<a href="#"><li>Children</li></a>
+						<a href="#"><li>Children</li></a>
+						<a href="#"><li>Children</li></a>
+						<a href="#"><li>Children</li></a>
+					</ul>
+				</nav>
+			</div>
+			<div class="content">
+				<p class="content__title">Science Fiction</p>
+				<span class="content__categories">Categories</span>
+				<div class="content__flexbox flexbox">
+					<div class="flexbox__part">
+						<img src="./img/book1.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+						<span class="sail">30% <span>off</span></span>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book2.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book3.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+						<span class="sail">30% <span>off</span></span>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book4.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book5.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book6.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+						<span class="sail">30% <span>off</span></span>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book7.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book8.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+						<span class="sail">30% <span>off</span></span>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book9.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book10.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book11.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+						<span class="sail">30% <span>off</span></span>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book12.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book13.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+						<span class="sail">30% <span>off</span></span>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book14.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book15.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book11.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book12.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book13.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book14.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+					</div>
+
+					<div class="flexbox__part">
+						<img src="./img/book15.png" alt="book" class="book">
+						<p class="paragraph">The Hare With Amber Eyes</p>
+						<p class="cost">$50</p>
+					</div>
+				</div>
+			</div>
 		</div>
-	</footer>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="./js/script.js"></script>	
+	<script src="./js/burger.js"></script>
 </body>
 </html>
