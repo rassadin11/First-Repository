@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Segoe WP';
+  src: url("../Fonts/Segoe WPN - Semibold/SegoeWP-Semibold.eot");
+  src: url("../Fonts/Segoe WPN - Semibold/SegoeWP-Semibold.eot?#iefix") format("embedded-opentype"), url("../Fonts/Segoe WPN - Semibold/SegoeWP-Semibold.woff") format("woff"), url("../Fonts/Segoe WPN - Semibold/SegoeWP-Semibold.ttf") format("truetype"), url("../Fonts/Segoe WPN - Semibold/SegoeWP-Semibold.svg#SegoeWP-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }

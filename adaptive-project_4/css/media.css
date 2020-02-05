@@ -1,0 +1,170 @@
+@media (max-width: 923px) {
+  .second .container .second__burger {
+    display: block;
+    position: absolute;
+    top: 22%;
+    left: 2%;
+    width: 30px;
+    height: 20px;
+    z-index: 5; }
+  .second .container .second__burger span {
+    position: absolute;
+    background: #000;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s; }
+  .second .container .second__burger:before,
+  .second .container .second__burger:after {
+    content: '';
+    background: #000;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0; }
+  .second .container .second__burger:before {
+    top: 0; }
+  .second .container .second__burger:after {
+    bottom: 0; }
+  .second .container .second__menu {
+    display: none;
+    left: -100%;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s; }
+  .second .container .second__menu.active {
+    left: 0;
+    display: inline-block;
+    margin-top: 5%; }
+  .second .container .second__burger.active:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 9px; }
+  .second .container .second__burger.active:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    bottom: 9px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s; }
+  .second .container .second__burger.active span {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0); }
+  .second.active {
+    height: 530px; } }
+
+@media (max-width: 923px) {
+  .first .container .flex .for-media {
+    display: block; }
+    .first .container .flex .for-media .for-market-and-right {
+      -webkit-transition-duration: 1s;
+      -o-transition-duration: 1s;
+      transition-duration: 1s; }
+    .first .container .flex .for-media .header__burger {
+      display: block;
+      position: absolute;
+      top: 10%;
+      right: 2%;
+      width: 50px;
+      height: 50px;
+      background: url(../img/2849824-basket-buy-market-multimedia-shop-shopping-store_107977.svg);
+      z-index: 5;
+      -webkit-transition-duration: 500ms;
+      -o-transition-duration: 500ms;
+      transition-duration: 500ms; }
+    .first .container .flex .for-media .market, .first .container .flex .for-media .right {
+      display: none;
+      left: -100%; }
+    .first .container .flex .for-media .market.active, .first .container .flex .for-media .right.active {
+      left: 0; }
+    .first .container .flex .for-media .header__burger.active {
+      background: url("../img/shoppingcart_77968.svg");
+      width: 50px;
+      height: 50px; }
+    .first .container .flex .for-media .for-market-and-right.active {
+      height: 250px;
+      position: absolute;
+      right: 20px;
+      top: 110px;
+      width: 200px;
+      border: none;
+      background: #d8ffb0;
+      z-index: 50; }
+      .first .container .flex .for-media .for-market-and-right.active .market.active {
+        margin-top: 20px;
+        position: relative;
+        display: block;
+        border: none; }
+        .first .container .flex .for-media .for-market-and-right.active .market.active .market__flex {
+          position: relative; }
+          .first .container .flex .for-media .for-market-and-right.active .market.active .market__flex .market__market {
+            width: 30px;
+            height: 30px;
+            margin-left: 30px; }
+          .first .container .flex .for-media .for-market-and-right.active .market.active .market__flex .market__cart {
+            width: 100px;
+            margin-left: 40px; }
+          .first .container .flex .for-media .for-market-and-right.active .market.active .market__flex .market__count {
+            position: absolute;
+            top: 30px;
+            left: 100px; }
+        .first .container .flex .for-media .for-market-and-right.active .market.active .market__money {
+          position: absolute;
+          top: 80px;
+          left: 10px; }
+        .first .container .flex .for-media .for-market-and-right.active .market.active .market__button {
+          position: absolute;
+          top: 80px;
+          right: 10px; }
+      .first .container .flex .for-media .for-market-and-right.active .right {
+        position: absolute;
+        top: 155px;
+        left: 30%;
+        display: block; } }
+
+@media (max-width: 1076px) {
+  .main .container .content .content__flexbox {
+    height: 1389px; }
+  .main .container .content .flexbox__part {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%; } }
+
+@media (max-width: 724px) {
+  .main .container {
+    height: 1922px; }
+    .main .container .content {
+      height: 1922px; }
+      .main .container .content .flexbox__part {
+        -ms-flex-preferred-size: 33.333333%;
+        flex-basis: 33.333333%; } }
+
+@media (max-width: 383px) {
+  .main .container .content .flexbox__part {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-left: 30%; } }
+
+@media (max-width: 560px) {
+  .main .container .content .flexbox__part {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; } }
+
+@media (max-width: 687px) {
+  .first .container .input .input__input {
+    width: 200px;
+    margin-left: -60px; } }
+
+@media (max-width: 582px) {
+  .first .container .input .input__input {
+    width: 200px;
+    margin-left: -20px; } }
+
+@media (max-width: 891px) {
+  .main .container .aside {
+    display: block; } }
